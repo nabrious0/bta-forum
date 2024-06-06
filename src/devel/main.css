@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+	@apply bg-base-500;
+	font-family: "Roboto", sans-serif;
+}
+
+.card {
+	@apply bg-base-400 rounded-sm shadow-sm shadow-black/40;
+}
+.card .card-header {
+	@apply bg-primary-500 border-y-[3px] border-t-primary-400 border-b-primary-600 rounded-sm text-white font-semibold shadow-sm shadow-black/40;
+	text-shadow: 0 1px 1px rgb(0, 0, 0, 40%);
+}
+
+.btn {
+	@apply inline-flex justify-center items-center px-4 h-9 pt-0.5 rounded-sm shadow-sm transition-all shadow-black/40 border-b-2 border-b-primary-600 uppercase font-semibold tracking-wide text-sm;
+	-webkit-user-drag: none;
+	text-shadow: 0 1px 1px rgb(0, 0, 0, 40%);
+}
+.btn-sm {
+	@apply h-8 text-xs;
+}
+.btn.btn-primary {
+	@apply text-white bg-primary-500 hover:bg-primary-550 active:bg-primary-600;
+}
